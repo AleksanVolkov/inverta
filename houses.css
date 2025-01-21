@@ -1,0 +1,141 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@media  (min-width:360px){
+
+    .houses_wrapper{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items:center
+    }
+    .hous_item{
+        width: 290px;
+        min-height: 400px;
+       
+    }
+    .houses_prev_img{
+        width: 290px;
+    }
+    .hous_item p{
+        padding:10px 0 10px 15px ;
+        
+    }
+    .hous_item{
+        width: 290px;
+        min-height: 400px;
+    }
+    .hous_item ul li{
+        padding: 0;
+        margin: 0;
+    }
+   
+   
+   
+}
+
+
+
+@media  (min-width:600px){
+
+    .hous_item{
+        width: 385px;
+        min-height: 400px;
+    }
+    .houses_prev_img{
+        width: 385px;
+    }
+}
+
+@media  (min-width:1000px){
+    .houses_wrapper{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+}
+
+
+@media  (min-width:1360px){
+    .houses_wrapper{
+        width: 1200px;
+        flex-wrap: wrap;
+        
+    }
+}
+    
+
+
+.houses_wrapper{
+    display: flex;
+    
+    margin: 60px auto 30px;
+    
+   
+}
+.hous_item{
+    box-sizing: border-box;
+    display: flex;
+    box-shadow: 0 0 24px 1px #3f4952ad;
+    position: relative;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: #282d32;
+    padding-bottom: 30px;
+}
+
+    
+
+.houses_prev_img{
+    display: block;
+    height: 210px;
+   
+    border-radius: 10px 10px 0 0 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+.hous_item ul{
+    
+    color: white;
+    padding: 5px 15px 15px;
+}
+.hous_item ul li{
+    color: white;
+    list-style-type:  none;
+    font-size: 14px;
+}
+
+.hous_item h3{
+    position: relative;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 100%;
+    background-color: #212529;
+    padding: 15px;
+}
+.hous_item p{
+    color: white;
+    margin-top: 10px;
+    text-decoration: underline;
+    
+    font-size: 16px;
+    
+}
+
+.hous_item button{
+    margin: 15px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #E4B564;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 50%;
+}
+

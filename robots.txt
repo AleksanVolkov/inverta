@@ -1,0 +1,3 @@
+Sitemap: https://ultra.hostflyby.net:2083/cpsess8287402150/frontend/jupiter/filemanager/editit.html?file=sitemap.xml&fileop=&dir=%2Fhome%2Finvertab%2Fpublic_html&dirop=&charset=&file_charset=utf-8&baseurl=&basedir=&edit=1
+User-agent: *
+Allow: 
