@@ -3,7 +3,8 @@ const tabsParrent = document.querySelector('.product_tabs'),
 
 const tabsArr = document.querySelectorAll('.product_tabs_item'),
       tabsInfoArr = document.querySelectorAll('.info_item'),
-      photoArr = document.querySelectorAll('.photo')
+      photoArr = document.querySelectorAll('.photo'),
+      photoField=document.querySelector('.product_field');
 
       hideInfo(tabsInfoArr)
       showInfo(0)
@@ -23,7 +24,9 @@ const tabsArr = document.querySelectorAll('.product_tabs_item'),
         const target= e.target
         
       
-      
+        
+
+
         tabsArr.forEach((item,inc)=>{
             if(target && target==item)
            
@@ -32,7 +35,7 @@ const tabsArr = document.querySelectorAll('.product_tabs_item'),
                 if(i==inc){
                     hideInfo(tabsInfoArr)
                     showInfo(i)
-                    sliderLoop(photoArr)
+                  
                     
                 }
             }
@@ -54,10 +57,40 @@ const tabsArr = document.querySelectorAll('.product_tabs_item'),
 
       }
 
-      function sliderLoop(photo){
-        let endField = (photo.length+1)*600
-        console.log(endField)
+      let position=-10;
+      let move =595;
+      let moveMob =280;
 
-      }
+      counter = 0;
+      const availableScreenWidth = window.screen.availWidth;
+
+      console.log(availableScreenWidth)
+
+
+      let endField = photoArr.length + 1
+      
+      setInterval( function sliderLoop(){
+                      
+        if(endField-3>counter && availableScreenWidth>600){
+          photoField.style.transform=`translateX(${-position-move-5}px)`;
+          position+=595
+          counter+=1
+        }else if(endField-3>counter && availableScreenWidth<600){
+          photoField.style.transform=`translateX(${-position-moveMob-5}px)`;
+          position+=280
+          counter+=1
+
+        }else{
+          position=-10
+          counter=0
+        }
+                      
+       
+
+      },6000)
+      
+
+      
+      
       
       

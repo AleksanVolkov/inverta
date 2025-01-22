@@ -10,7 +10,7 @@ const housesArr = [
             size:'размер: 17.3м x 20.1м',
             square:'общая площадь: 345.56м'
         },
-        link:'https://inverta.by/chastnye_doma',
+        link:'./proekty_domov/proekt_inVerta_A1.html',
         alt:'дом под ключ 345 квадратных метров фасад штукатурка и дерево'
         
     },
